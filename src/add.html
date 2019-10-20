@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<div class="container">
+    <form action="/upload" method="post">
+        <div class="form-group">
+            <label for="exampleInputTitle">标题</label>
+            <input type="text" class="form-control" id="exampleInputTitle" name="title" placeholder="title">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputAbstract">简介</label>
+            <input type="text" class="form-control" id="exampleInputAbstract" name="abstract" placeholder="abstract">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputTag">标签</label>
+            <input type="text" class="form-control" id="exampleInputTag" name="tag" placeholder="tag">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputFile">选择文件</label>
+            <input type="file" id="exampleInputFile" class="btn" name="file" value="helo" onchange="getPath()">
+        </div>
+
+        <button type="submit" class="btn btn-primary">上传</button>
+    </form>
+</div>
+<script>
+    function getPath() {
+        var file = document.getElementById('exampleInputFile')
+        console.log(file.value)
+    }
+
+</script>
+</body>
+</html>
