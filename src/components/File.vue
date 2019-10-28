@@ -41,6 +41,17 @@
 
 
 <style class="scss" scoped>
-
+    table {
+        font-size: 14px;
+    }
+    td {
+        padding: 8px;
+    }
+    tr {
+        padding: 10px 0;
+    }
+    th {
+        padding: 5px;
+    }
 
 </style>
