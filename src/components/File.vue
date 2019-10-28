@@ -5,7 +5,7 @@
                 <th>文件管理</th>
 
             </tr>
-            <tr v-for="item in msg" :key="item._id">
+            <tr v-for="item in totalArticles" :key="item._id">
                 <td>{{item.title}}</td>
             </tr>
         </table>
@@ -17,7 +17,7 @@
     export default {
         data () {
             return {
-                msg: []
+                totalArticles: []
             }
         },
         created () {
@@ -25,9 +25,8 @@
         },
         methods: {
             getAll () {
-                this.$http.get('/all').then(result=>{
-                    console.log(result)
-                    this.msg = result.body.msg
+                this.$http.get('/api/allArticles').then(result=>{
+                    this.totalArticles = result.body.data
                 })
             }
         }
