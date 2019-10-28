@@ -10,7 +10,7 @@
             <tr v-for="item in totalArticles" :key="item._id">
                 <td>{{item.title}}</td>
                 <td><router-link :to="'/api/article/edit/'+item._id">编辑</router-link></td>
-                <td><a :href="'/api/article/delete?id='+item._id">删除</a></td>
+                <td><a :href="'/api/article/delete/?_id='+item._id">删除</a></td>
             </tr>
 
         </table>
@@ -22,7 +22,8 @@
     export default {
         data () {
             return {
-                totalArticles: []
+                totalArticles: [],
+                id:this.$route.params.id
             }
         },
         created () {
