@@ -1,6 +1,6 @@
 <template>
     <div>
-        <form action="/upload" method="post">
+        <form action="/api/article/upload" method="post">
             <div class="form-group">
                 <label for="exampleInputTitle">标题</label>
                 <input type="text" class="form-control" id="exampleInputTitle" name="title" placeholder="title">
@@ -14,7 +14,7 @@
                 <input type="text" class="form-control" id="exampleInputTag" name="tag" placeholder="tag">
             </div>
 
-            <textarea name="file" id="" cols="30" rows="10"></textarea>
+            <textarea name="content" id="" cols="30" rows="10"></textarea>
 
             <button type="submit" class="btn btn-primary">上传</button>
         </form>
