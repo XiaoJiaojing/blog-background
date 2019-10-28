@@ -10,11 +10,11 @@
 
                 <router-link class="supai" to="/all" >
                     <span class="fa fa-home"></span>
-                    <span>总文件</span>
+                    <span>管理</span>
                 </router-link>
                 <router-link class="supai" to="/upload">
                     <span class="fa fa-send"></span>
-                    <span>上传</span>
+                    <span>新建</span>
                 </router-link>
             </div>
 

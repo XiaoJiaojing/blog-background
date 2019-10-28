@@ -14,7 +14,7 @@
                 <input type="text" class="form-control" id="exampleInputAbstract" name="abstract" placeholder="abstract" :value="article.abstract">
             </div>
             <div class="form-group">
-                <label for="exampleInputTag">标签ID</label>
+                <label for="exampleInputTag">标签</label>
                 <input type="text" class="form-control" id="exampleInputTag" name="tagId" placeholder="tag" :value="article.tagId">
             </div>
 
