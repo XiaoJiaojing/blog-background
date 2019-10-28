@@ -18,7 +18,7 @@
                 <input type="text" class="form-control" id="exampleInputTag" name="tagId" placeholder="tag" :value="article.tagId">
             </div>
 
-            <textarea name="content" id="" cols="30" rows="10" :value="article.content"></textarea>
+            <textarea name="content" id="" cols="90" rows="10" :value="article.content"></textarea>
 
             <button type="submit" class="btn btn-primary">提交</button>
         </form>
@@ -53,6 +53,12 @@ export default {
         textarea {
             border: 1px solid #ccc;
         }
+    }
+    textarea {
+        padding-left: 10px;
+        width: 100%;
+        height: 200px;
+
     }
 
 </style>
